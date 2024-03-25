@@ -1,6 +1,7 @@
-from words import choose_word
+#import all of the important suff (modules) that code would work properly
+ from words import choose_word
 from graphics import draw_hangman, display_word
-
+# function for the guessing word
 def hangman():
     word = choose_word()
     guessed_letters = []
@@ -20,7 +21,7 @@ def hangman():
             print("\nCongratulations! You guessed the word:", word)
             break
     else:
-        print("\nSorry, you ran out of attempts! The word was:", word)
+        print("\nSorry, you ran out of tricks! The word is:", word)
 
 if __name__ == "__main__":
     hangman()
